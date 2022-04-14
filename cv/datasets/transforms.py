@@ -1,6 +1,7 @@
 from base.utils import Registry, build_from_cfg
 
 
+
 class SingleTransform:
     def __init__(self):
         pass
@@ -31,3 +32,4 @@ class VisionTransforms:
         body = [type_name for type_name in self.transformers.keys()]
         lines = [head] + [' ' * self._repr_indent + line for line in body]
         return '\n'.join(lines)
+
